@@ -30,7 +30,7 @@ DROP TABLE IF EXISTS `course`;
 CREATE TABLE `course` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
-  `number` varchar(10) COLLATE utf8_bin DEFAULT NULL,
+  `number` varchar(10) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `ID_UNIQUE` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
