@@ -43,7 +43,7 @@ CREATE TABLE `grade` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `studentID` int(11) NOT NULL,
   `courseID` int(11) NOT NULL,
-  `letterGrade` char(1) NOT NULL,
+  `letterGrade` varchar(4) NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `ID_UNIQUE` (`ID`),
   CONSTRAINT `fk_course` FOREIGN KEY (`courseID`) REFERENCES `course` (`ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
